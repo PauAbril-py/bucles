@@ -19,10 +19,13 @@ sym=random.randint(0,3)
 carta1=carta()
 punts1=num
 
-print("\nLa carta de la maquina es:")
+if punts1 == 0:
+	print("\nNo pots guanyar")
+else:
+	print("\nLa carta de la maquina es:")
+	
 while True:
 	if punts1 == 0:
-		print("no pots guanyar")
 		break
 
 	time.sleep(1)
